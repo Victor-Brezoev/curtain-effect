@@ -1,0 +1,29 @@
+html, body {
+    margin:0px;
+    height:100%;
+  }
+
+.curtain{
+    background-image: linear-gradient(to bottom, blue 50%, red 50%);
+}
+
+.curtain::after{
+    content: "";
+    display:block;
+    height: 100vh;
+}
+
+.invert{
+    position: sticky;
+    top: 40px;
+    mix-blend-mode: difference;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h2{
+    color:red ;
+    font-size: 120px;
+}
